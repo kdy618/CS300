@@ -10,7 +10,7 @@ Do you want to be addressed as ...
 .......................................======>Jane Doe?
 .......................................======>Mr./Ms. Jane Margaret Doe?
 .......................................======>Dear Jane?
-or 
+or
 .......................................======>Doe, Jane Margaret?
 3.
 After a blank line, the same output, but applied to Archibald Montague Abercrombie
@@ -18,7 +18,8 @@ After a blank line, the same output, but applied to Archibald Montague Abercromb
 After a blank line, the same output, but applied to Cleopatra Anastasia Montgomery
 '''
 
-x = '\nGreetings from a beginning Python programmer.\nDo you want to be address as ...\n'
+x = '\nGreetings from a beginning Python programmer.\n'
+    'Do you want to be address as ...\n'
 y = 'or'
 z = '.......................................======>'
 z0 = '?'
@@ -35,14 +36,14 @@ lastName3 = 'Montgomery'
 print(x)
 print(z + name1 + " " + middleName1 + " " + lastName1 + z0)
 print(z + name1 + " " + lastName1 + z0)
-print(z + "Mr./Ms. " + name1 + " " + middleName1 + " "+ lastName1 + z0)
-print(z + "Dear "+ name1 + z0)
+print(z + "Mr./Ms. " + name1 + " " + middleName1 + " " + lastName1 + z0)
+print(z + "Dear " + name1 + z0)
 print(y)
 print(z + lastName1 + "," + name1 + " " + middleName1 + z0 + "\n")
 print(z + name2 + " " + middleName2 + " " + lastName2 + z0)
-print(z + name2 + " " + lastName2+ z0)
+print(z + name2 + " " + lastName2 + z0)
 print(z + "Mr./Ms. " + name2 + " " + middleName2 + " " + lastName2 + z0)
-print(z + "Dear "+ name2 + z0)
+print(z + "Dear " + name2 + z0)
 print(y)
 print(z + lastName2 + "," + name2 + " " + middleName2 + z0 + "\n")
 print(z + name3 + " " + middleName3 + " " + lastName3 + z0)
@@ -51,6 +52,3 @@ print(z + "Mr./Ms. " + name3 + " " + middleName3 + " " + lastName3 + z0)
 print(z + "Dear " + name3 + z0)
 print(y)
 print(z + lastName3 + "," + name3 + " " + middleName3 + z0)
-
-
-

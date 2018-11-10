@@ -1,5 +1,5 @@
 
-''' 
+'''
 Eliza300: Postconditions
 1. (Welcome): A welcome message is on the console
 2. (Complaint): A complaint was entered by the user in response to a prompt
@@ -14,10 +14,13 @@ Eliza300: Postconditions
 intro = 'Thank you for using Eliza300, a fun therapy program.'
 print(intro)
 complaint = input('Please state your complaint: ')
-monthsOfExp = input('How many months has it been that you have experienced ' + "'{}'".format(complaint) + '? ')
+respone = "How many months has it been that you have experienced '{}'? "
+monthsOfExp = input(respone.format(complaint))
+confirm = "{}  months is too much to go without help!"
+    " Let's schedule a few sessions."
 
 if monthsOfExp.isdigit():
-	if int(monthsOfExp) > 2: 
-		print(monthsOfExp + ' ' + "months is too much to go without help! Let's schedule a few sessions.")
-	else:
-		print('Come back in a couple of months if this persists.')
+    if int(monthsOfExp) > 2:
+        print(confirm.format(monthsOfExp))
+    else:
+        print('Come back in a couple of months if this persists.')

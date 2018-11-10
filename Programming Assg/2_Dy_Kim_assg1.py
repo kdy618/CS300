@@ -10,11 +10,12 @@ Do you want to be addressed as ...
 .......................................======>Jane Doe?
 .......................................======>Mr./Ms. Jane Margaret Doe?
 .......................................======>Dear Jane?
-or 
+or
 .......................................======>Doe, Jane Margaret?
 '''
 
-x = '\nGreetings from a beginning Python programmer.\nDo you want to be address as ...'
+x = '\nGreetings from a beginning Python programmer.\n'
+    'Do you want to be address as ...'
 y = '.......................................======>'
 z = 'or'
 z0 = '?'
